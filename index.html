@@ -1,0 +1,65 @@
+<html>
+<header>
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="formulario.js"></script>
+</header>
+<body>
+	<form action="http://terrivel.herokuapp.com/monster" method="GET">
+		<table id="table_form">
+			<th>
+				<td>
+					<label>Número de Pedras</label>
+					<input type="range" min="0" step="1" value="1" name="num_pedras">
+					<span name="counter_num_pedras">1</span>
+				</td>
+			</th>
+			<th>
+				<td>
+					<label>Tamanho das Pedras</label>
+					<input type="range" min="1" max="7" step="1" value="3" name="tam_pedras">
+					<span name="counter_tam_pedras">3</span>
+				</td>
+			</th>
+			<th>
+				<td>
+					<label>Tipo da pedra</label>
+					<select name="tipo_pedras" size="4">
+					  <option value="marroada">Marroada</option>
+					  <option value="ametista">Ametista</option>
+					  <option value="topazio">Topázio</option>
+					  <option value="espinela">Espinela</option>
+					</select>
+					</td>
+				</th>
+				<th>
+				<td>
+					<label>Tipo de pedra sortida</label>
+					<select name="tipo_pedras_sortidas" size="2">
+					  <option value="sim">Sim</option>
+					  <option value="nao">Não</option>
+					</select>
+				</td>
+			</th>
+			<th>
+				<td>
+
+					<label>Nome do Monstro</label>
+					<input type="text" name="nome">
+				</td>
+			</th>
+			<th>
+				<td>
+					<label>Cor do céu 1</label>
+					<input type="color" name="corCeu1">
+				</td>
+				<td>
+					<label>Cor do céu 2</label>
+					<input type="color" name="corCeu2">
+				</td>
+			</th>
+		</table>
+		<input type="submit">
+	</form>
+</body>
+</html>
